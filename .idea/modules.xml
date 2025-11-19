@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CheckBox/CheckBox.iml" filepath="$PROJECT_DIR$/CheckBox/CheckBox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstButton/FirstButton.iml" filepath="$PROJECT_DIR$/FirstButton/FirstButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstTextField/FirstTextField.iml" filepath="$PROJECT_DIR$/FirstTextField/FirstTextField.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFXExamples/JavaFXExamples.iml" filepath="$PROJECT_DIR$/JavaFXExamples/JavaFXExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaFxExamples.iml" filepath="$PROJECT_DIR$/.idea/JavaFxExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LabelChangeExample/LabelChangeExample.iml" filepath="$PROJECT_DIR$/LabelChangeExample/LabelChangeExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleApplicationStructure/SimpleApplicationStructure.iml" filepath="$PROJECT_DIR$/SimpleApplicationStructure/SimpleApplicationStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextArea/TextArea.iml" filepath="$PROJECT_DIR$/TextArea/TextArea.iml" />
+    </modules>
+  </component>
+</project>
