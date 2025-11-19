@@ -20,7 +20,7 @@ public class TextAreaExample extends Application
 
 
     Button appendButton = new Button("Append");
-    appendButton.setOnAction(e -> {
+    appendButton.setOnAction(_ -> {
       String text = textField.getText();
       if(!text.isEmpty()){
           textArea.appendText(text + "\n");
@@ -29,13 +29,11 @@ public class TextAreaExample extends Application
     });
 
     Button printButton = new Button("Print Text to Console");
-      printButton.setOnAction(event -> {
+      printButton.setOnAction(_ -> {
       String text = textArea.getText();
         System.out.println(text);
       textArea.clear();
       });
-
-
 
     VBox root = new VBox(10, textField, appendButton, textArea, printButton);
     Scene scene = new Scene(root, 900, 600);

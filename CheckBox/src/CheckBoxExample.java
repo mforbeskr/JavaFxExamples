@@ -13,7 +13,7 @@ public class CheckBoxExample extends Application
     checkBox.setAllowIndeterminate(true);
 
     Button button = new Button("Print State");
-    button.setOnAction(event -> {
+    button.setOnAction(_ -> {
     if(checkBox.isIndeterminate()){
       System.out.println("Indeterminate");
     }
@@ -26,7 +26,7 @@ public class CheckBoxExample extends Application
 
     CheckBox checkBox1 = new CheckBox("Enable notifications");
 
-    checkBox1.setOnAction(e-> {
+    checkBox1.setOnAction(_-> {
       if (checkBox1.isSelected()) {
         System.out.println("Checkbox is now SELECTED");
       } else {

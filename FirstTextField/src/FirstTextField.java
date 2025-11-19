@@ -15,7 +15,7 @@ public class FirstTextField extends Application
     TextField textField = new TextField();
     Label output = new Label();
     Button button = new Button("Transfer to label");
-    button.setOnAction(e -> {
+    button.setOnAction(_ -> {
       String oldContent = output.getText() + "\n" + textField.getText();
       output.setText(oldContent);
       String text = textField.getText();
@@ -23,12 +23,10 @@ public class FirstTextField extends Application
       System.out.println(text);
     });
 
-    // LIVE LABEL FROM TEXTFIELD
+    // LIVE LABEL FROM TEXT FIELD
     TextField textField2 = new TextField();
     Label label = new Label("Your text will appear here");
-    textField2.setOnKeyReleased(e -> {
-      label.setText(textField2.getText());
-    });
+    textField2.setOnKeyReleased(_ -> label.setText(textField2.getText()));
 
     VBox box = new VBox(14, textField, textField2, button, output, label);
     Scene scene = new Scene(box);

@@ -8,8 +8,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import persistance.DataManager;
 
-import java.util.stream.Collectors;
-
 public class UI
 {
 
@@ -24,7 +22,7 @@ public class UI
 
     TextField textField = new TextField();
     Button button = new Button("Add string");
-    button.setOnAction(e -> {
+    button.setOnAction(_ -> {
       dataManager.addString(textField.getText());
       textField.setText("");
     });
@@ -32,8 +30,8 @@ public class UI
     Label dataShowingLabel = new Label();
 
     Button displayDataButton = new Button("Show data");
-    displayDataButton.setOnAction(e ->{
-      String result = dataManager.getStrings().stream().collect(Collectors.joining("\n"));
+    displayDataButton.setOnAction(_ -> {
+      String result = String.join("\n", dataManager.getStrings());
       dataShowingLabel.setText(result);
     });
 

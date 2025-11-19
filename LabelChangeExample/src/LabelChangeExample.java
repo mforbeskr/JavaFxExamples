@@ -13,10 +13,10 @@ public class LabelChangeExample extends Application
     Label label = new Label("Hello, World");
 
     Button moonButton = new Button("Set Moon");
-    moonButton.setOnAction(e-> label.setText("Hello, Moon!"));
+    moonButton.setOnAction(_-> label.setText("Hello, Moon!"));
 
     Button sunButton = new Button("Set Sun");
-    sunButton.setOnAction(e -> label.setText("Hello, Sun"));
+    sunButton.setOnAction(_ -> label.setText("Hello, Sun"));
 
     VBox root = new VBox(10, label, moonButton, sunButton);
     Scene scene = new Scene(root, 300, 200);
